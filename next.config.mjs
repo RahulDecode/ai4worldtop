@@ -1,9 +1,5 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  experimental: {
-    serverComponentsExternalPackages: ["@node-rs/argon2"],
-  },
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "*.supabase.co" },
